@@ -1,8 +1,15 @@
 print("hello rabin")
 
-firstNum = input("enter 1st number: ")
-secondNum = input("enter 2nd number")
 
-sum = int(firstNum) + int(secondNum)
+def takeInputAndAdd():
+    count = int(input("How many numbers do you want to add? "))
 
-print("The sum is: " + str(sum))
+    total = 0
+    for i in range(count):
+        num = int(input(f"Enter number {i + 1}: "))
+        total += num
+
+    print("The sum is: " + str(total))
+
+
+takeInputAndAdd()
